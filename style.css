@@ -157,5 +157,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 10px;
 }
+  .servicios-titulo {
+  color: #F51F3B !important; /* rojo exacto */
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 
 
