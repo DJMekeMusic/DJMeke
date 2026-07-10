@@ -5,41 +5,44 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 17px; /* base equilibrada */
+  font-size: 16px; /* base más equilibrada */
+  max-width: 1200px; /* límite de ancho en PC */
+  margin: 0 auto; /* centrado */
 }
 
 .logo-img {
-  width: 250px;
+  width: 220px; /* más compacto */
   margin-top: 20px;
 }
 
 .tagline {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #ccc;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* Títulos */
 .servicios-titulo,
 .contacto-titulo {
-  color: #F51F3B; /* rojo oficial */
+  color: #F51F3B;
   margin-bottom: 15px;
   text-align: center;
+  font-size: 1.5em;
 }
 
 /* Servicios en lista vertical */
 .servicios {
   display: flex;
-  flex-direction: column; /* siempre vertical */
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   margin-top: 20px;
 }
 
 .servicios p {
   color: #fff;
-  margin: 5px 0;
-  font-size: 1.3em; /* más grande para que no se vea pequeño */
+  margin: 4px 0;
+  font-size: 1.2em;
 }
 
 /* Botones */
@@ -53,19 +56,20 @@ body {
 
 .btn {
   display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
-  background: #F51F3B;   /* color del logo */
+  margin: 8px;
+  padding: 14px 24px; /* botones más grandes */
+  background: #F51F3B;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
   text-align: center;
+  font-size: 1.1em; /* letras más grandes */
 }
 
 .btn:hover {
-  background: #fff;        /* fondo blanco */
-  color: #F51F3B;          /* letras rojas */
+  background: #fff;
+  color: #F51F3B;
   box-shadow: 0 0 10px #F51F3B;
 }
 
@@ -73,42 +77,42 @@ body {
 .contacto-info p {
   color: #fff;
   margin: 5px 0;
+  font-size: 1.1em;
 }
 
 /* Responsive ajustes */
 @media (min-width: 1024px) {
   body {
-    font-size: 19px; /* más grande en PC */
-  }
-
-  .servicios {
-    max-width: 900px; /* más ancho para que no se corte */
+    font-size: 17px; /* más proporcionado en PC */
   }
 }
 
 @media (max-width: 600px) {
   body {
-    font-size: 18px; /* más cómodo en celular */
-    line-height: 1.6; /* más aire entre líneas */
+    font-size: 19px; /* más grande en celular */
+    line-height: 1.6;
+    padding: 0 10px;
   }
 
   .servicios {
-    width: 90%; /* ocupa casi toda la pantalla */
-    align-items: flex-start; /* alineado a la izquierda para mejor lectura */
+    width: 100%;
+    align-items: flex-start;
   }
 
   .servicios p {
-    font-size: 1.2em; /* más grande en móvil */
+    font-size: 1.3em; /* servicios más grandes en móvil */
   }
 
   .botones {
     flex-direction: column;
-    align-items: stretch; /* botones ocupan todo el ancho */
+    align-items: stretch;
   }
 
   .btn {
-    width: 100%; /* botones grandes en móvil */
-    max-width: 300px;
-    margin: 8px auto;
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+    font-size: 1.2em; /* letras más grandes en botones */
+    padding: 16px 26px; /* botones más cómodos */
   }
 }
