@@ -53,10 +53,11 @@ ul li {
 }
 
 .btn:hover {
-  background: #fff;        /* fondo blanco */
-  color: #F51F3B;          /* letras rojas */
-  box-shadow: 0 0 10px #F51F3B; /* brillo rojo */
+  background: #fff !important;        /* fondo blanco */
+  color: #F51F3B !important;          /* letras rojas exactas */
+  box-shadow: 0 0 10px #F51F3B !important; /* brillo rojo */
 }
+
 
 
 }
