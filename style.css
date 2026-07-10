@@ -108,5 +108,18 @@ ul li {
     gap: 10px;
   }
 }
+h2 {
+  color: #F51F3B; /* mismo rojo que los botones y el logo */
+  margin-top: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contacto h2 {
+  color: #F51F3B; /* coherencia total */
+}
+
+.servicios h2 {
+  color: #F51F3B; /* título "Disponible para" también en rojo */
+}
 
 
