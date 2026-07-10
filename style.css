@@ -27,19 +27,19 @@ body {
   text-align: center;
 }
 
-/* Servicios */
+/* Servicios en lista vertical */
 .servicios {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* dos columnas iguales */
-  gap: 20px;
-  max-width: 800px;
-  margin: 20px auto;
+  display: flex;
+  flex-direction: column; /* siempre vertical */
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .servicios p {
   color: #fff;
-  margin: 8px 0;
-  font-size: 1.2em;
+  margin: 5px 0;
+  font-size: 1.3em; /* más grande para que no se vea pequeño */
 }
 
 /* Botones */
@@ -84,11 +84,7 @@ body {
 
 @media (max-width: 600px) {
   body {
-    font-size: 16px; /* más cómodo en celular */
-  }
-
-  .servicios {
-    grid-template-columns: 1fr; /* una sola columna en celular */
+    font-size: 18px; /* más cómodo en celular */
   }
 
   .botones {
