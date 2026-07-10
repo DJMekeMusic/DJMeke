@@ -90,7 +90,7 @@ body {
 
 @media (max-width: 600px) {
   body {
-    font-size: 28px; /* mucho más grande en celular */
+    font-size: 20px; /* mucho más grande en celular */
     line-height: 1.8;
     padding: 0 12px;
     max-width: 100%; /* ocupa todo el ancho en móvil */
