@@ -87,5 +87,26 @@ ul li {
     flex-direction: column;
     align-items: center;
   }
+.servicios {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
 }
+
+.servicios p {
+  color: #fff;
+  margin: 8px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive: en pantallas pequeñas se apila en una sola columna */
+@media (max-width: 600px) {
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
 
