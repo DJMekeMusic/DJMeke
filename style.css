@@ -103,7 +103,7 @@ body {
 /* Responsive ajustes */
 @media (max-width: 600px) {
   body {
-    font-size: 17px; /* +10% en móvil */
+    font-size: 17px;
     line-height: 1.6;
     padding: 0 12px;
     max-width: 100%;
@@ -136,8 +136,15 @@ body {
     text-align: center;
   }
 
+  /* Teléfono y email en columnas en móvil */
   .contacto-linea {
-    white-space: nowrap; /* fuerza una sola línea */
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap; /* si el espacio es muy reducido, se acomoda */
+  }
+
+  .contacto-linea span {
+    font-size: 1em;
   }
 }
