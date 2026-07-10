@@ -5,7 +5,7 @@ body {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  font-size: 15px; /* compacto en PC */
+  font-size: 15px; /* base en PC */
   max-width: 900px; /* límite de ancho en PC */
 }
 
@@ -30,7 +30,7 @@ body {
   font-size: 1.3em;
 }
 
-/* Servicios en lista vertical */
+/* Servicios */
 .servicios {
   display: flex;
   flex-direction: column;
@@ -90,18 +90,18 @@ body {
 
 @media (max-width: 600px) {
   body {
-    font-size: 20px; /* mucho más grande en celular */
-    line-height: 1.8;
+    font-size: 17px; /* solo +10% en móvil */
+    line-height: 1.6;
     padding: 0 12px;
-    max-width: 100%; /* ocupa todo el ancho en móvil */
+    max-width: 100%;
   }
 
   .logo-img {
-    width: 360px; /* logo grande en móvil */
+    width: 200px; /* logo apenas más grande */
   }
 
   .servicios p {
-    font-size: 1.6em; /* servicios grandes en móvil */
+    font-size: 1.2em; /* servicios un poco más grandes */
     text-align: center;
   }
 
@@ -112,14 +112,14 @@ body {
 
   .btn {
     width: 100%;
-    max-width: 360px;
-    margin: 14px auto;
-    font-size: 1.5em; /* letras grandes en botones */
-    padding: 20px 28px;
+    max-width: 320px;
+    margin: 12px auto;
+    font-size: 1.1em; /* letras apenas más grandes */
+    padding: 12px 20px;
   }
 
   .contacto-info p {
-    font-size: 1.4em; /* contacto grande en móvil */
+    font-size: 1.2em; /* contacto un poco más grande */
     text-align: center;
   }
 }
