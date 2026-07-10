@@ -5,7 +5,7 @@ body {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  font-size: 15px; /* más compacto en PC */
+  font-size: 15px; /* compacto en PC */
   max-width: 900px; /* límite de ancho en PC */
 }
 
@@ -90,13 +90,17 @@ body {
 
 @media (max-width: 600px) {
   body {
-    font-size: 22px; /* mucho más grande en celular */
-    line-height: 1.6;
+    font-size: 24px; /* mucho más grande en celular */
+    line-height: 1.8;
     padding: 0 12px;
   }
 
+  .logo-img {
+    width: 300px; /* logo mucho más grande en móvil */
+  }
+
   .servicios p {
-    font-size: 1.5em; /* servicios más grandes en móvil */
+    font-size: 1.6em; /* servicios más grandes en móvil */
   }
 
   .botones {
@@ -106,13 +110,13 @@ body {
 
   .btn {
     width: 100%;
-    max-width: 320px;
-    margin: 10px auto;
-    font-size: 1.4em; /* letras más grandes en botones */
-    padding: 16px 24px; /* botones más cómodos */
+    max-width: 340px;
+    margin: 12px auto;
+    font-size: 1.5em; /* letras mucho más grandes en botones */
+    padding: 18px 26px; /* botones más cómodos */
   }
 
   .contacto-info p {
-    font-size: 1.3em; /* contacto más grande en móvil */
+    font-size: 1.4em; /* contacto más grande en móvil */
   }
 }
