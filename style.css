@@ -5,13 +5,13 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 16px; /* base más equilibrada */
-  max-width: 1200px; /* límite de ancho en PC */
+  font-size: 16px; /* base equilibrada */
+  max-width: 1000px; /* límite de ancho en PC */
   margin: 0 auto; /* centrado */
 }
 
 .logo-img {
-  width: 220px; /* más compacto */
+  width: 200px; /* más compacto */
   margin-top: 20px;
 }
 
@@ -27,7 +27,7 @@ body {
   color: #F51F3B;
   margin-bottom: 15px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 /* Servicios en lista vertical */
@@ -57,14 +57,14 @@ body {
 .btn {
   display: inline-block;
   margin: 8px;
-  padding: 14px 24px; /* botones más grandes */
+  padding: 12px 20px;
   background: #F51F3B;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
   text-align: center;
-  font-size: 1.1em; /* letras más grandes */
+  font-size: 1em;
 }
 
 .btn:hover {
@@ -83,13 +83,13 @@ body {
 /* Responsive ajustes */
 @media (min-width: 1024px) {
   body {
-    font-size: 17px; /* más proporcionado en PC */
+    font-size: 15px; /* más compacto en PC */
   }
 }
 
 @media (max-width: 600px) {
   body {
-    font-size: 19px; /* más grande en celular */
+    font-size: 20px; /* mucho más grande en celular */
     line-height: 1.6;
     padding: 0 10px;
   }
@@ -100,7 +100,7 @@ body {
   }
 
   .servicios p {
-    font-size: 1.3em; /* servicios más grandes en móvil */
+    font-size: 1.4em; /* servicios más grandes en móvil */
   }
 
   .botones {
@@ -112,7 +112,7 @@ body {
     width: 100%;
     max-width: 320px;
     margin: 10px auto;
-    font-size: 1.2em; /* letras más grandes en botones */
+    font-size: 1.3em; /* letras más grandes en botones */
     padding: 16px 26px; /* botones más cómodos */
   }
 }
