@@ -121,5 +121,11 @@ h2 {
 .servicios h2 {
   color: #F51F3B; /* título "Disponible para" también en rojo */
 }
+.servicios-titulo {
+  color: #F51F3B; /* mismo rojo que los botones */
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
 
 
