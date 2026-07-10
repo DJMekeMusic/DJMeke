@@ -144,5 +144,17 @@ body {
   body {
     font-size: 14px; /* más cómodo en celular */
   }
+}.servicios-titulo {
+  color: #F51F3B; /* rojo exacto */
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
 }
+
+.contacto-titulo {
+  color: #F51F3B; /* mismo rojo exacto */
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
 
