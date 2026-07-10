@@ -34,7 +34,7 @@ body {
 .servicios {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centrado en PC */
+  align-items: center;
   gap: 6px;
   margin: 20px auto;
   width: 100%;
@@ -90,40 +90,36 @@ body {
 
 @media (max-width: 600px) {
   body {
-    font-size: 32px; /* MUCHO más grande en celular */
+    font-size: 28px; /* mucho más grande en celular */
     line-height: 1.8;
     padding: 0 12px;
     max-width: 100%; /* ocupa todo el ancho en móvil */
   }
 
   .logo-img {
-    width: 380px; /* logo gigante en móvil */
-  }
-
-  .servicios {
-    align-items: center; /* centrado en móvil */
+    width: 360px; /* logo grande en móvil */
   }
 
   .servicios p {
-    font-size: 2em; /* servicios enormes en móvil */
+    font-size: 1.6em; /* servicios grandes en móvil */
     text-align: center;
   }
 
   .botones {
     flex-direction: column;
-    align-items: center; /* centrado en móvil */
+    align-items: center;
   }
 
   .btn {
     width: 100%;
-    max-width: 380px;
-    margin: 16px auto;
-    font-size: 1.8em; /* letras grandes en botones */
-    padding: 22px 30px; /* botones cómodos */
+    max-width: 360px;
+    margin: 14px auto;
+    font-size: 1.5em; /* letras grandes en botones */
+    padding: 20px 28px;
   }
 
   .contacto-info p {
-    font-size: 1.6em; /* contacto grande en móvil */
+    font-size: 1.4em; /* contacto grande en móvil */
     text-align: center;
   }
 }
