@@ -6,7 +6,7 @@ body {
   padding: 0;
   text-align: center;
   font-size: 15px; /* base en PC */
-  max-width: 900px; /* límite de ancho en PC */
+  max-width: 900px;
 }
 
 /* Logo */
@@ -82,15 +82,9 @@ body {
 }
 
 /* Responsive ajustes */
-@media (min-width: 1024px) {
-  body {
-    font-size: 15px; /* compacto en PC */
-  }
-}
-
 @media (max-width: 600px) {
   body {
-    font-size: 17px; /* solo +10% en móvil */
+    font-size: 17px; /* +10% en móvil */
     line-height: 1.6;
     padding: 0 12px;
     max-width: 100%;
@@ -103,11 +97,6 @@ body {
   .servicios p {
     font-size: 1.2em; /* servicios un poco más grandes */
     text-align: center;
-  }
-
-  .botones {
-    flex-direction: column;
-    align-items: center;
   }
 
   .btn {
