@@ -128,4 +128,19 @@ h2 {
   text-align: center;
 }
 
+body {
+  font-size: 16px; /* tamaño base */
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px; /* más grande en PC */
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* más cómodo en celular */
+  }
+}
 
