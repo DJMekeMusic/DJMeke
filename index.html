@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>DJ Meke</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO básico -->
-  <meta name="description" content="DJ Meke - Más que música, una experiencia. Disponible para discotecas, eventos corporativos, festivales, fiestas privadas, temáticas y matrimonios.">
+  <meta name="description" content="DJ Meke - Más que música, una experiencia.">
   <meta name="keywords" content="DJ Meke, música, eventos, discotecas, festivales, matrimonios, Lima, Perú">
   <meta name="author" content="DJ Meke">
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="LOGO REDUCIDO CON BORDE FAVICON.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="LOGO REDUCIDO CON BORDE FAVICON.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="LOGO REDUCIDO CON BORDE FAVICON.png">
 
-  <!-- Fuente segura -->
+  <!-- Fuente -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TU_ID_AQUI"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TU_ID_REAL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-S91YZFW3BQ'); 
+    gtag('config', 'G-TU_ID_REAL'); 
   </script>
 </head>
 <body>
   <header>
-    <img src="LOGO PRINCIPAL CON BORDE (5).png" alt="DJ Meke Logo" class="logo-img" loading="lazy">
+    <img src="LOGO PRINCIPAL CON BORDE (5).png" alt="DJ Meke Logo" class="logo-img">
     <p class="tagline">Más que música. Una experiencia.</p>
   </header>
 
@@ -45,7 +44,7 @@
 
   <section class="contacto">
     <div class="botones">
-      <a href="https://wa.me/51904918257?text=Hola%20DJ%20Meke,%20quisiera%20informaci%C3%B3n%20sobre%20tus%20shows." class="btn">Whatsapp</a>
+      <a href="https://wa.me/51904918257?text=Hola%20DJ%20Meke" class="btn">Whatsapp</a>
       <a href="https://www.youtube.com/@djmeke" class="btn">YouTube</a>
       <a href="https://www.tiktok.com/@djmekemusic" class="btn">TikTok</a>
       <a href="https://www.instagram.com/djmeke/" class="btn">Instagram</a>
@@ -53,17 +52,46 @@
 
     <div class="contacto-info">
       <h2 class="contacto-titulo">Contacto:</h2>
-      <div class="contacto-linea">
-        <span class="telefono">Teléfono: +51 904 918 257</span>
-        <span class="email">Email: DJMekemusic@gmail.com</span>
-      </div>
+      <p>Teléfono: +51 904 918 257</p>
+      <p>Email: DJMekemusic@gmail.com</p>
     </div>
   </section>
 
-  <!-- Eventos personalizados para Google Analytics -->
+  <!-- Eventos personalizados -->
   <script>
+  document.addEventListener("DOMContentLoaded", function() {
     // WhatsApp
     document.querySelector('.btn[href*="wa.me"]').addEventListener('click', function() {
       gtag('event', 'click_whatsapp', {
         'event_category': 'Botones',
-        'event_label': '
+        'event_label': 'WhatsApp'
+      });
+    });
+
+    // YouTube
+    document.querySelector('.btn[href*="youtube"]').addEventListener('click', function() {
+      gtag('event', 'click_youtube', {
+        'event_category': 'Botones',
+        'event_label': 'YouTube'
+      });
+    });
+
+    // TikTok
+    document.querySelector('.btn[href*="tiktok"]').addEventListener('click', function() {
+      gtag('event', 'click_tiktok', {
+        'event_category': 'Botones',
+        'event_label': 'TikTok'
+      });
+    });
+
+    // Instagram
+    document.querySelector('.btn[href*="instagram"]').addEventListener('click', function() {
+      gtag('event', 'click_instagram', {
+        'event_category': 'Botones',
+        'event_label': 'Instagram'
+      });
+    });
+  });
+  </script>
+</body>
+</html>
