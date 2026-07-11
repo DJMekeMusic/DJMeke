@@ -19,12 +19,12 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TU_ID_AQUI"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX'); 
+    gtag('config', 'G-TU_ID_AQUI'); 
   </script>
 </head>
 <body>
@@ -66,33 +66,4 @@
     document.querySelector('.btn[href*="wa.me"]').addEventListener('click', function() {
       gtag('event', 'click_whatsapp', {
         'event_category': 'Botones',
-        'event_label': 'WhatsApp'
-      });
-    });
-
-    // YouTube
-    document.querySelector('.btn[href*="youtube"]').addEventListener('click', function() {
-      gtag('event', 'click_youtube', {
-        'event_category': 'Botones',
-        'event_label': 'YouTube'
-      });
-    });
-
-    // TikTok
-    document.querySelector('.btn[href*="tiktok"]').addEventListener('click', function() {
-      gtag('event', 'click_tiktok', {
-        'event_category': 'Botones',
-        'event_label': 'TikTok'
-      });
-    });
-
-    // Instagram
-    document.querySelector('.btn[href*="instagram"]').addEventListener('click', function() {
-      gtag('event', 'click_instagram', {
-        'event_category': 'Botones',
-        'event_label': 'Instagram'
-      });
-    });
-  </script>
-</body>
-</html>
+        'event_label': '
