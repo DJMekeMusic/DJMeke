@@ -1,97 +1,194 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>DJ Meke</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO básico -->
-  <meta name="description" content="DJ Meke - Más que música, una experiencia.">
-  <meta name="keywords" content="DJ Meke, música, eventos, discotecas, festivales, matrimonios, Lima, Perú">
-  <meta name="author" content="DJ Meke">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="LOGO REDUCIDO CON BORDE FAVICON.png">
+<title>DJ Meke | Más que música. Una experiencia.</title>
 
-  <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta name="description" content="DJ Meke | Más que música. Una experiencia. Shows para discotecas, eventos corporativos, matrimonios, festivales y fiestas privadas.">
 
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S91YZFW3BQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-S91YZFW3BQ'); 
-  </script>
+<meta name="keywords" content="DJ Meke,DJ Perú,DJ Lima,Discotecas,Matrimonios,Eventos,Festivales">
+
+<meta name="author" content="DJ Meke">
+
+<meta name="theme-color" content="#141414">
+
+<link rel="icon" type="image/png" href="LOGO REDUCIDO CON BORDE FAVICON.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="DJ Meke">
+<meta property="og:description" content="Más que música. Una experiencia.">
+<meta property="og:image" content="LOGO PRINCIPAL CON BORDE (5).png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S91YZFW3BQ"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config','G-S91YZFW3BQ');
+
+function trackSocial(platform,url){
+
+gtag('event','click_social',{
+
+platform:platform,
+
+event_callback:function(){
+
+window.location.href=url;
+
+}
+
+});
+
+setTimeout(function(){
+
+window.location.href=url;
+
+},350);
+
+}
+
+</script>
+
 </head>
+
 <body>
-  <header>
-    <img src="LOGO PRINCIPAL CON BORDE (5).png" alt="DJ Meke Logo" class="logo-img">
-    <p class="tagline">Más que música. Una experiencia.</p>
-  </header>
 
-  <h2 class="servicios-titulo">Disponible para:</h2>
-  <div class="servicios">
-    <p>Discotecas</p>
-    <p>Eventos corporativos</p>
-    <p>Festivales</p>
-    <p>Fiestas privadas</p>
-    <p>Fiestas temáticas</p>
-    <p>Matrimonios</p>
-  </div>
+<header>
 
-  <section class="contacto">
-    <div class="botones">
-      <a href="https://wa.me/51904918257?text=Hola%20DJ%20Meke" class="btn">Whatsapp</a>
-      <a href="https://www.youtube.com/@djmeke" class="btn">YouTube</a>
-      <a href="https://www.tiktok.com/@djmekemusic" class="btn">TikTok</a>
-      <a href="https://www.instagram.com/djmeke/" class="btn">Instagram</a>
-    </div>
+<img src="LOGO PRINCIPAL CON BORDE (5).png" alt="DJ Meke" class="logo-img">
 
+<p class="tagline">
+
+Más que música.<br>
+
+<strong>Una experiencia.</strong>
+
+</p>
+
+<p class="subtagline">
+
+Disponible para eventos en todo el Perú
+
+</p>
+
+</header>
+
+<section class="servicios">
+
+<h2 class="servicios-titulo">
+
+Servicios
+
+</h2>
+
+<div class="cards">
+
+<div class="card">Discotecas</div>
+
+<div class="card">Eventos corporativos</div>
+
+<div class="card">Festivales</div>
+
+<div class="card">Fiestas privadas</div>
+
+<div class="card">Fiestas temáticas</div>
+
+<div class="card">Matrimonios</div>
+
+</div>
+
+</section>
+
+<section class="contacto">
+
+<div class="botones">
+
+<a href="#"
+
+onclick="trackSocial('whatsapp','https://wa.me/51904918257?text=Hola%20DJ%20Meke');return false;"
+
+class="btn">
+
+WhatsApp
+
+</a>
+
+<a href="#"
+
+onclick="trackSocial('youtube','https://www.youtube.com/@djmeke');return false;"
+
+class="btn">
+
+YouTube
+
+</a>
+
+<a href="#"
+
+onclick="trackSocial('tiktok','https://www.tiktok.com/@djmekemusic');return false;"
+
+class="btn">
+
+TikTok
+
+</a>
+
+<a href="#"
+
+onclick="trackSocial('instagram','https://www.instagram.com/djmeke/');return false;"
+
+class="btn">
+
+Instagram
+
+</a>
+
+</div>
     <div class="contacto-info">
-      <h2 class="contacto-titulo">Contacto:</h2>
-      <p>Teléfono: +51 904 918 257</p>
-      <p>Email: DJMekemusic@gmail.com</p>
+
+      <h2 class="contacto-titulo">
+        Contáctame
+      </h2>
+
+      <p>
+        +51 904 918 257
+      </p>
+
+      <p>
+        DJmekemusic@gmail.com
+      </p>
+
     </div>
-  </section>
 
-  <!-- Eventos personalizados -->
-  <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // WhatsApp
-    document.querySelector('.btn[href*="wa.me"]').addEventListener('click', function() {
-      gtag('event', 'click_whatsapp', {
-        'event_category': 'Botones',
-        'event_label': 'WhatsApp'
-      });
-    });
+</section>
 
-    // YouTube
-    document.querySelector('.btn[href*="youtube"]').addEventListener('click', function() {
-      gtag('event', 'click_youtube', {
-        'event_category': 'Botones',
-        'event_label': 'YouTube'
-      });
-    });
+<footer>
 
-    // TikTok
-    document.querySelector('.btn[href*="tiktok"]').addEventListener('click', function() {
-      gtag('event', 'click_tiktok', {
-        'event_category': 'Botones',
-        'event_label': 'TikTok'
-      });
-    });
+<p>
+© 2026 DJ Meke
+</p>
 
-    // Instagram
-    document.querySelector('.btn[href*="instagram"]').addEventListener('click', function() {
-      gtag('event', 'click_instagram', {
-        'event_category': 'Botones',
-        'event_label': 'Instagram'
-      });
-    });
-  });
-  </script>
+</footer>
+
 </body>
+
 </html>
