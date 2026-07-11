@@ -67,9 +67,9 @@
     gtag('js', new Date());
     gtag('config', 'G-S91YZFW3BQ');
 
-    // Función para registrar clics en botones sociales
+    // Función para registrar clics en botones sociales con nombres simples
     function trackClick(buttonName) {
-      gtag('event', 'click_' + buttonName.toLowerCase(), {
+      gtag('event', buttonName, {
         'event_category': 'Botones Sociales',
         'event_label': buttonName
       });
