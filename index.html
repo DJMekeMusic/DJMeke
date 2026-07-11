@@ -22,30 +22,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S91YZFW3BQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config','G-S91YZFW3BQ');
-
-    function trackSocial(platform,url){
-      gtag('event','click_social',{
-        platform:platform,
-        event_callback:function(){
-          window.location.href=url;
-        }
-      });
-      setTimeout(function(){
-        window.location.href=url;
-      },350);
-    }
-  </script>
 </head>
 <body>
-  <header class="fade-in">
+  <header>
     <img src="LOGO PRINCIPAL CON BORDE (5).png" alt="DJ Meke" class="logo-img">
     <p class="tagline">Más que música. <strong>Una experiencia.</strong></p>
     <p class="subtagline">Disponible para eventos en todo el Perú</p>
@@ -65,10 +44,10 @@
 
   <section class="contacto fade-in">
     <div class="botones">
-      <a href="#" onclick="trackSocial('whatsapp','https://wa.me/51904918257?text=Hola%20DJ%20Meke');return false;" class="btn">WhatsApp</a>
-      <a href="#" onclick="trackSocial('youtube','https://www.youtube.com/@djmeke');return false;" class="btn">YouTube</a>
-      <a href="#" onclick="trackSocial('tiktok','https://www.tiktok.com/@djmekemusic');return false;" class="btn">TikTok</a>
-      <a href="#" onclick="trackSocial('instagram','https://www.instagram.com/djmeke/');return false;" class="btn">Instagram</a>
+      <a href="https://wa.me/51904918257?text=Hola%20DJ%20Meke" class="btn">WhatsApp</a>
+      <a href="https://www.youtube.com/@djmeke" class="btn">YouTube</a>
+      <a href="https://www.tiktok.com/@djmekemusic" class="btn">TikTok</a>
+      <a href="https://www.instagram.com/djmeke/" class="btn">Instagram</a>
     </div>
     <div class="contacto-info">
       <h2 class="contacto-titulo">Contáctame</h2>
