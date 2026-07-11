@@ -12,10 +12,20 @@
 
   <link rel="icon" type="image/png" href="LOGO REDUCIDO CON BORDE FAVICON.png">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="DJ Meke">
-  <meta property="og:description" content="Más que música. Una experiencia.">
-  <meta property="og:image" content="LOGO PRINCIPAL CON BORDE (5).png">
+  <meta property="og:url" content="https://djmekemusic.github.io/DJMeke/">
+  <meta property="og:title" content="DJ Meke | Más que música. Una experiencia.">
+  <meta property="og:description" content="Shows para discotecas, eventos corporativos, matrimonios, festivales y fiestas privadas.">
+  <meta property="og:image" content="Imagen cabecera web DJMeke.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DJ Meke | Más que música. Una experiencia.">
+  <meta name="twitter:description" content="Shows para discotecas, eventos corporativos, matrimonios, festivales y fiestas privadas.">
+  <meta name="twitter:image" content="Imagen cabecera web DJMeke.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,44 +54,3 @@
   <section class="contacto fade-in">
     <div class="botones">
       <a href="https://www.youtube.com/@djmeke" class="btn">YouTube</a>
-      <a href="https://www.tiktok.com/@djmekemusic" class="btn">TikTok</a>
-      <a href="https://www.instagram.com/djmeke/" class="btn">Instagram</a>
-      <a href="https://wa.me/51904918257?text=Hola%20DJ%20Meke" class="btn">WhatsApp</a>
-    </div>
-    <div class="contacto-info">
-      <h2 class="contacto-titulo">Contáctame</h2>
-      <p>+51 904 918 257</p>
-      <p>DJmekemusic@gmail.com</p>
-    </div>
-  </section>
-
-  <footer class="fade-in">
-    <p>© 2026 DJ Meke</p>
-  </footer>
-
-  <!-- Google Analytics con eventos personalizados -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S91YZFW3BQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-S91YZFW3BQ');
-
-    // Función para registrar clics en botones sociales con nombres simples
-    function trackClick(buttonName) {
-      gtag('event', buttonName, {
-        'event_category': 'Botones Sociales',
-        'event_label': buttonName
-      });
-    }
-
-    // Asignar listeners a cada botón
-    document.querySelectorAll('.btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const name = this.textContent.trim();
-        trackClick(name);
-      });
-    });
-  </script>
-</body>
-</html>
