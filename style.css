@@ -62,7 +62,7 @@ body {
 .servicios-lista {
   list-style:none;        /* elimina los puntos */
   padding:0;
-  margin:0 auto 60px;     /* centrado + espacio extra antes de botones */
+  margin:0 auto 60px;     /* espacio extra antes de botones */
   max-width:400px;
   text-align:center;      /* centra el texto */
 }
