@@ -51,20 +51,22 @@ body {
   to { opacity:1; transform:translateY(0); }
 }
 
-/* Servicios como lista */
+/* Servicios como lista simple */
 .servicios-titulo {
   color:#F51F3B;
   font-size:1.55rem;
   font-weight:700;
   margin-bottom:20px;
 }
+
 .servicios-lista {
   list-style:disc; /* viñetas normales */
-  padding-left:20px;
+  padding-left:40px; /* sangría para centrar con viñetas */
   margin:auto;
   max-width:400px;
   text-align:left;
 }
+
 .servicios-lista li {
   color:#FFF;
   margin:6px 0;
