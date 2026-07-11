@@ -58,5 +58,30 @@
   <footer class="fade-in">
     <p>© 2026 DJ Meke</p>
   </footer>
+
+  <!-- Google Analytics con eventos personalizados -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S91YZFW3BQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S91YZFW3BQ');
+
+    // Función para registrar clics en botones sociales
+    function trackClick(buttonName) {
+      gtag('event', 'click_' + buttonName.toLowerCase(), {
+        'event_category': 'Botones Sociales',
+        'event_label': buttonName
+      });
+    }
+
+    // Asignar listeners a cada botón
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const name = this.textContent.trim();
+        trackClick(name);
+      });
+    });
+  </script>
 </body>
 </html>
