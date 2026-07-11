@@ -51,32 +51,32 @@ body {
   to { opacity:1; transform:translateY(0); }
 }
 
-/* Servicios */
+/* Servicios como lista */
 .servicios-titulo {
   color:#F51F3B;
   font-size:1.55rem;
   font-weight:700;
-  margin-bottom:28px;
+  margin-bottom:20px;
 }
-.cards {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:16px;
+.servicios-lista {
+  list-style:none;
+  padding:0;
   margin:auto;
+  max-width:400px;
+  text-align:left;
 }
-.card {
+.servicios-lista li {
   background:#1C1C1C;
   border:1px solid rgba(255,255,255,.08);
-  border-radius:14px;
-  padding:18px;
-  transition:.35s ease;
-  font-size:1rem;
+  border-radius:8px;
+  padding:10px 14px;
+  margin:8px 0;
   font-weight:600;
+  transition:.25s ease;
 }
-.card:hover {
-  transform:translateY(-6px) scale(1.03);
+.servicios-lista li:hover {
   border-color:#F51F3B;
-  box-shadow:0 12px 30px rgba(245,31,59,.25);
+  transform:translateX(4px);
 }
 
 /* Botones */
@@ -138,6 +138,5 @@ footer p {
 @media (max-width:767px) {
   body { padding:35px 22px 50px; }
   .logo-img { width:190px; }
-  .cards { grid-template-columns:1fr; }
   .btn { width:100%; }
 }
