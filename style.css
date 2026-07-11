@@ -79,7 +79,7 @@ body {
   transform:translateX(4px);
 }
 
-/* Botones */
+/* Botones sociales */
 .botones {
   display:flex;
   flex-direction:column;
