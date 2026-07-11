@@ -141,7 +141,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 12px;
-    flex-wrap: wrap; /* si el espacio es muy reducido, se acomoda */
+    flex-wrap: wrap;
   }
 
   .contacto-linea span {
