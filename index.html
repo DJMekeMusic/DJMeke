@@ -1,142 +1,63 @@
-/* Reset */
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html {
-  scroll-behavior:smooth;
-}
+  <title>DJ Meke | Más que música. Una experiencia.</title>
+  <meta name="description" content="DJ Meke | Más que música. Una experiencia. Shows para discotecas, eventos corporativos, matrimonios, festivales y fiestas privadas.">
+  <meta name="keywords" content="DJ Meke,DJ Perú,DJ Lima,Discotecas,Matrimonios,Eventos,Festivales">
+  <meta name="author" content="DJ Meke">
+  <meta name="theme-color" content="#141414">
 
-body {
-  background:#141414;
-  color:#FFFFFF;
-  font-family:'Open Sans', sans-serif;
-  max-width:900px;
-  margin:auto;
-  padding:40px 24px 60px;
-  text-align:center;
-  line-height:1.6;
-}
+  <link rel="icon" type="image/png" href="LOGO REDUCIDO CON BORDE FAVICON.png">
 
-/* Logo */
-.logo-img {
-  width:220px;
-  max-width:80%;
-  display:block;
-  margin:0 auto 28px;
-}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DJ Meke">
+  <meta property="og:description" content="Más que música. Una experiencia.">
+  <meta property="og:image" content="LOGO PRINCIPAL CON BORDE (5).png">
 
-/* Taglines */
-.tagline {
-  font-size:1.15rem;
-  font-weight:300;
-  margin-bottom:12px;
-}
-.tagline strong { font-weight:700; }
-.subtagline {
-  font-size:.92rem;
-  color:#A8A8A8;
-  letter-spacing:.5px;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-/* Animación fade-in */
-.fade-in {
-  opacity:0;
-  transform:translateY(20px);
-  animation:fadeInUp 0.8s ease forwards;
-}
-@keyframes fadeInUp {
-  to { opacity:1; transform:translateY(0); }
-}
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="LOGO PRINCIPAL CON BORDE (5).png" alt="DJ Meke" class="logo-img">
+    <p class="tagline">Más que música. <strong>Una experiencia.</strong></p>
+    <p class="subtagline">Disponible para eventos en todo el Perú</p>
+  </header>
 
-/* Servicios como lista */
-.servicios-titulo {
-  color:#F51F3B;
-  font-size:1.55rem;
-  font-weight:700;
-  margin-bottom:20px;
-}
-.servicios-lista {
-  list-style:none;
-  padding:0;
-  margin:auto;
-  max-width:400px;
-  text-align:left;
-}
-.servicios-lista li {
-  background:#1C1C1C;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:8px;
-  padding:10px 14px;
-  margin:8px 0;
-  font-weight:600;
-  transition:.25s ease;
-}
-.servicios-lista li:hover {
-  border-color:#F51F3B;
-  transform:translateX(4px);
-}
+  <section class="servicios fade-in">
+    <h2 class="servicios-titulo">Disponible para:</h2>
+    <ul class="servicios-lista">
+      <li>Discotecas</li>
+      <li>Eventos corporativos</li>
+      <li>Matrimonios</li>
+      <li>Fiestas privadas</li>
+      <li>Fiestas temáticas</li>
+      <li>Festivales</li>
+    </ul>
+  </section>
 
-/* Botones */
-.botones {
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-  margin-bottom:55px;
-}
-.btn {
-  background:#F51F3B;
-  color:#FFF;
-  text-decoration:none;
-  padding:16px 20px;
-  border-radius:12px;
-  font-weight:700;
-  transition:.35s ease;
-  box-shadow:0 10px 24px rgba(245,31,59,.18);
-}
-.btn:hover {
-  transform:translateY(-4px) scale(1.05);
-  background:#FF3352;
-  box-shadow:0 18px 35px rgba(245,31,59,.30);
-}
+  <section class="contacto fade-in">
+    <div class="botones">
+      <a href="https://www.youtube.com/@djmeke" class="btn">YouTube</a>
+      <a href="https://www.tiktok.com/@djmekemusic" class="btn">TikTok</a>
+      <a href="https://www.instagram.com/djmeke/" class="btn">Instagram</a>
+      <a href="https://wa.me/51904918257?text=Hola%20DJ%20Meke" class="btn">WhatsApp</a>
+    </div>
+    <div class="contacto-info">
+      <h2 class="contacto-titulo">Contáctame</h2>
+      <p>+51 904 918 257</p>
+      <p>DJmekemusic@gmail.com</p>
+    </div>
+  </section>
 
-/* Contacto */
-.contacto-titulo {
-  color:#F51F3B;
-  font-size:1.35rem;
-  margin-bottom:18px;
-  font-weight:700;
-}
-.contacto-info p {
-  color:#CFCFCF;
-  margin:8px 0;
-  font-size:.98rem;
-}
-
-/* Footer */
-footer {
-  margin-top:70px;
-  padding-top:30px;
-  border-top:1px solid rgba(255,255,255,.08);
-}
-footer p {
-  color:#777;
-  font-size:.85rem;
-}
-
-/* Responsive */
-@media (min-width:768px) {
-  .botones {
-    flex-direction:row;
-    justify-content:center;
-    flex-wrap:wrap;
-  }
-  .btn { min-width:180px; }
-}
-@media (max-width:767px) {
-  body { padding:35px 22px 50px; }
-  .logo-img { width:190px; }
-  .btn { width:100%; }
-}
+  <footer class="fade-in">
+    <p>© 2026 DJ Meke</p>
+  </footer>
+</body>
+</html>
