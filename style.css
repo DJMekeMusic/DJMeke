@@ -59,25 +59,17 @@ body {
   margin-bottom:20px;
 }
 .servicios-lista {
-  list-style:none;
-  padding:0;
+  list-style:disc; /* viñetas normales */
+  padding-left:20px;
   margin:auto;
   max-width:400px;
   text-align:left;
 }
 .servicios-lista li {
   color:#FFF;
-  background:#1C1C1C;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:6px;
-  padding:10px 14px;
   margin:6px 0;
+  font-size:1rem;
   font-weight:600;
-  transition:.25s ease;
-}
-.servicios-lista li:hover {
-  border-color:#F51F3B;
-  transform:translateX(4px);
 }
 
 /* Botones sociales */
