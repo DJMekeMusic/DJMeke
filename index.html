@@ -34,3 +34,64 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <img src="LOGO PRINCIPAL CON BORDE (5).png" alt="DJ Meke" class="logo-img">
+    <p class="tagline">Más que música. <strong>Una experiencia.</strong></p>
+  </header>
+
+  <section class="servicios fade-in">
+    <h2 class="servicios-titulo">Eventos en todo el Perú, disponible para:</h2>
+    <ul class="servicios-lista">
+      <li>Discotecas</li>
+      <li>Eventos Corporativos</li>
+      <li>Festivales</li>
+      <li>Fiestas Privadas</li>
+      <li>Fiestas Temáticas</li>
+      <li>Matrimonios</li>
+    </ul>
+  </section>
+
+  <section class="contacto fade-in">
+    <div class="botones">
+      <a href="https://www.youtube.com/@djmeke" class="btn">YouTube</a>
+      <a href="https://www.tiktok.com/@djmekemusic" class="btn">TikTok</a>
+      <a href="https://www.instagram.com/djmeke/" class="btn">Instagram</a>
+      <a href="https://wa.me/51904918257?text=Hola%20DJ%20Meke" class="btn">WhatsApp</a>
+    </div>
+    <div class="contacto-info">
+      <h2 class="contacto-titulo">Contáctame</h2>
+      <p>+51 904 918 257</p>
+      <p>DJmekemusic@gmail.com</p>
+    </div>
+  </section>
+
+  <footer class="fade-in">
+    <p>© 2026 DJ Meke</p>
+  </footer>
+
+  <!-- Google Analytics con eventos personalizados -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S91YZFW3BQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S91YZFW3BQ');
+
+    // Función para registrar clics en botones sociales con nombres simples
+    function trackClick(buttonName) {
+      gtag('event', buttonName, {
+        'event_category': 'Botones Sociales',
+        'event_label': buttonName
+      });
+    }
+
+    // Asignar listeners a cada botón
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const name = this.textContent.trim();
+        trackClick(name);
+      });
+    });
+  </script>
+</body>
+</html>
